@@ -1,3 +1,7 @@
+## About this fork
+Some calculations were inlined (dot function, for example) to gain performance boost when using noise function actively.
+Also, spherical, cylindrical and 4D functions were removed in order to reduce code size.
+
 # Fast Simplex Noise
 
 [![build](https://img.shields.io/travis/joshforisha/fast-simplex-noise-js.svg)](https://travis-ci.org/joshforisha/fast-simplex-noise)
@@ -53,22 +57,6 @@ Options contains:
 
 ### Instance Methods
 
-#### `cylindrical(circumference: number, coords: number[]): number`
-
-Get a scaled noise value (using **options**) for a 2D or 3D point at `coords` on the surface of a cylinder with `circumference`.
-
-#### `cylindrical2D(circumference: number, x: number, y: number): number`
-
-Specific `cylindrical()` call for a 2D point at (`x`, `y`).
-
-#### `cylindrical3D(circumference: number, x: number, y: number, z: number): number`
-
-Specific `cylindrical()` call for a 3D point at (`x`, `y`, `z`).
-
-#### `raw(coords: number[]): number`
-
-Get a noise value [-1, 1] at a 2D, 3D, or 4D point at `coords`.
-
 #### `raw2D(x: number, y: number): number`
 
 Specific `raw()` call for a 2D point at (`x`, `y`).
@@ -76,14 +64,6 @@ Specific `raw()` call for a 2D point at (`x`, `y`).
 #### `raw3D(x: number, y: number, z: number): number`
 
 Specific `raw()` call for a 3D point at (`x`, `y`, `z`).
-
-#### `raw4D(x: number, y: number, z: number, w: number): number`
-
-Specific `raw()` call for a 4D point at (`x`, `y`, `z`, `w`).
-
-#### `scaled(coords: number[]): number`
-
-Get a scaled noise value (using **options**) at a 2D, 3D, or 4D point at `coords`.
 
 #### `scaled2D(x: number, y: number): number`
 
@@ -93,18 +73,3 @@ Specific `scaled()` call for a 2D point at (`x`, `y`).
 
 Specific `scaled()` call for a 3D point at (`x`, `y`, `z`).
 
-#### `scaled4D(x: number, y: number, z: number, w: number): number`
-
-Specific `scaled()` call for a 4D point at (`x`, `y`, `z`, `w`).
-
-#### `spherical(circumference: number, point: number[]): number`
-
-Get a scaled noise value (using **options**) at a 2D or 3D point at `coords` on the surface of a sphere with `circumference`.
-
-#### `spherical2D(circumference: number, x: number, y: number): number`
-
-Specific `spherical()` call for a 2D point at (`x`, `y`).
-
-#### `spherical3D(circumference: number, x: number, y: number, z: number): number`
-
-Specific `spherical()` call for a 3D point at (`x`, `y`, `z`).

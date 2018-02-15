@@ -1,6 +1,6 @@
 {
-  "name": "fast-simplex-noise",
-  "version": "3.2.0",
+  "name": "faster-simplex-noise",
+  "version": "1.0.1",
   "description": "A TypeScript implementation of faster simplex noise",
   "keywords": [
     "noise",
@@ -8,13 +8,13 @@
     "random",
     "simplex"
   ],
-  "homepage": "https://github.com/joshforisha/fast-simplex-noise-js",
-  "bugs": "https://github.com/joshforisha/fast-simplex-noise-js/issues",
+  "homepage": "https://github.com/maximyanovsky/faster-simplex-noise",
+  "bugs": "https://github.com/maximyanovsky/faster-simplex-noise/pulls",
   "license": "Unlicense",
-  "author": "Josh Forisha <josh@forisha.com> (http://joshforisha.com)",
+  "author": "Maxim Yanovskiy <maximka.yanovsky@gmail.com>",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
-  "repository": "joshforisha/fast-simplex-noise-js",
+  "repository": "maximyanovsky/faster-simplex-noise",
   "scripts": {
     "compile": "tsc",
     "test": "standardts src/**/*.ts"
